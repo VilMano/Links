@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Links</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+
+            .wrapper {
+                width: 100%!important;
+            }
+        }
+
+
+        body {
+            /* background-color: black; */
+            color: antiquewhite;
+
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+            font-size: 24px;
+            box-sizing: border-box;
+
+            background-color: black;
+        }
+
+        .container {
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 1rem;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            backdrop-filter: blur(10px) saturate(70%);
+            width: 70%;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+
+            width: 100%;
+        }
+
+        .link {
+            padding: 1rem 2rem;
+            padding-bottom: 2rem;
+
+            transition: .3s ease-in;
+        }
+
+        .link:hover {
+            box-shadow: inset 0px -4px 13px -8px rgba(240, 248, 255, 0.678);
+            transition: .3s;
+
+            cursor: pointer;
+        }
+
+        .hr {
+            background-color: #f0f8ff5e;
+            height: 1px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 5rem;
+            padding: 0;
+            margin: 0;
+            font-weight: 200;
+        }
+
+        h3 {
+            font-weight: 100;
+        }
+
+        #aka {
+            font-weight: 900;
+        }
+
+        .align-bottom {
+            align-items: end;
+            text-align: end;
+        }
+
+        .name {
+            padding-bottom: 6rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="row name align-bottom">
+                <h1>
+                    Guilherme Mano
+                </h1>
+                <span id="aka">AKA</span>
+                <h3>Vil</h3>
+            </div>
+            <div class="row">
+                <div class="link"><a href="https://cd-photography.studio">Photography</a></div>
+                <div class="link"><a href="https://bsky.app/profile/villelmus.bsky.social"></a>Bluesky</div>
+                <div class="link"><a href="https://mast.hutchie.scot/@vil">Mastodon</a></div>
+            </div>
+            <div class="row">
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
